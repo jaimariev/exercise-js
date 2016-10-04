@@ -47,9 +47,13 @@ avg(23, 92, 12);
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
-function getLength(str){
-
+function getLength(string){
+  var str = "Jaimarie";
+  var asdf = str.length;
 }
+
+getLength(str);
+
 
 
 
