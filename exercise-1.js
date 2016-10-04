@@ -47,7 +47,9 @@
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
 
+function greaterThan(x, y) {
 
+}
 
 
 // Q5
@@ -56,8 +58,11 @@
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 
+function greet(name){
+  return "Hello " + name + "!";
+}
 
-
+greet("Jaimarie");
 
 // Q6
 // Write a function called `madlib` that takes
@@ -69,6 +74,13 @@
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
+
+
+function madLib(word1, word2, word3, word4){
+  return "The " + word1 + " brown " + word2 + " " + word3 + " over the " + word4 + ".";
+}
+
+madLib("quick", "fox", "jumps", "fence");
 
 
 
