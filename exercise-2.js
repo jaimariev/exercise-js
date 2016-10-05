@@ -26,9 +26,39 @@ function isVowel(char){
 // Write a function translate() that will translate a text into "Rovarspraket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-function rovarspraket(phrase){
-    //...
+function isVowel(char){
+  var vowels = [
+    'a', 
+    'e', 
+    'i', 
+    'o', 
+    'u'
+    ];
+
+//return vowels.indexOf(char) !== -1; is also another way to do this.
+
+  if(vowels.indexOf(char) !== -1) {
+    return true
+  } else {
+    return false
+  }
 }
+
+var str = "abcdef";
+
+function rovarspraket(phrase){
+  var newStr = "";
+  for(var i = 0;i < phrase.length; i += 1) {
+    if(isVowel(phrase[i])) {
+      newStr += phrase[i]
+    } else {
+      newStr += phrase[i] + 'o' + phrase[i]
+    }
+  }
+  return newStr
+}
+
+rovarspraket(str);
 
 
 // ---------------------
