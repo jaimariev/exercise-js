@@ -65,6 +65,30 @@ rovarspraket(str);
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+//shortcut version
+function reverse(phrase){
+  return phrase.split("").reverse().join("")    
 }
+
+//for loop version
+
+function reverse(phrase){
+  var newStr = ""
+
+  for(var i = phrase.length -1; i >= 0; i -= 1){
+    newStr += phrase[i]
+  }
+  return newStr
+}
+
+
+
+
+
+
+
+
+
+
+
+
